@@ -47,11 +47,11 @@ body {
 
 .section {
   padding-top: 94px;
-  padding-left: 94px;
+  padding-bottom: 94px;
 }
 
 /*--------шапка---------*/
-.container {
+.header > .container {
   display: flex;
   align-items: center;
 }
@@ -124,6 +124,7 @@ body {
 
 .hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
@@ -134,6 +135,11 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  padding-top: 200px;
+  width: 696px;
 }
 
 .hero-btn {
@@ -145,6 +151,10 @@ body {
   cursor: pointer;
   color: #ffffff;
   background-color: #2196f3;
+  min-width: 216px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  margin-bottom: 200px;
 }
 
 /*------------------- Features---------------*/
@@ -162,12 +172,23 @@ body {
   overflow: hidden;
 }
 
-.feature-title {
+.feature > .container {
+  display: flex;
+  align-items: center;
+}
+
+.feature-list {
+  display: flex;
+  gap: 30px;
+}
+
+.feuture .feature-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .feature-text {
@@ -175,24 +196,48 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-page-color);
+  width: 270px;
 }
 
 /*----------------- work-------------------- */
+
+.work-list {
+  display: flex;
+  gap: 30px;
+  padding-bottom: 94px;
+}
 
 .work-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
 /* -------------------our team-----------------*/
+.team-cards {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
 
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-page-color);
+  padding-bottom: 50px;
+}
 .card-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  padding-bottom: 10px;
 }
 
 .card-text {
@@ -200,6 +245,10 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--secondary-page-color);
+}
+
+.card > .team-img {
+  padding-bottom: 30px;
 }
 
 /*-----------------footer--------------------*/
@@ -215,6 +264,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .footer span {
@@ -227,6 +279,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  display: inline-block;
+  margin-bottom: 9px;
 }
 
 .mail-link,
@@ -236,8 +290,16 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
 }
 
+.mail-link {
+  margin-bottom: 9px;
+}
+
+.tel-link {
+  margin-bottom: 60px;
+}
 .address-link:hover,
 .address-link:focus,
 .mail-link:hover,
