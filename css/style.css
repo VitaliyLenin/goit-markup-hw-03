@@ -45,16 +45,38 @@ body {
   outline: 2px solid red;
 }
 
+.section {
+  padding-top: 94px;
+  padding-left: 94px;
+}
+
 /*--------шапка---------*/
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
 
 .header-list {
   display: flex;
 }
 
-.header > .container {
-  display: flex;
+.header-item:not(:last-child) {
+  margin-right: 50px;
 }
 
+.header-connect {
+  margin-left: auto;
+}
+
+.header-connect > .contacts {
+  display: flex;
+  gap: 50px;
+}
 
 .header-logo {
   font-family: 'Raleway', sans-serif;
@@ -63,6 +85,9 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #2196f3;
+  margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header-nav span {
